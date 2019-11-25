@@ -55,11 +55,12 @@
                 <input type="file" name="file" />
             </div>
             <div class="col">
-                <input type="submit" value="Submit" />
+                <input type="submit" id= "submit2" value="Submit" />
             </div>
         </div>
     </form>
 </div>
+
 
 <div class="footer-copyright fixed-bottom">
     <div class="container">
@@ -80,5 +81,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+<script>
+    $("#submit2").click(function(){
+        alert("Congratulations! You have posted a new job!")
+    });
+</script>
+
+</div>
 </body>
 </html>
