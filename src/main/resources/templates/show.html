@@ -10,8 +10,8 @@
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
-<div id="listfont">
-<a href="/">Job Details</a><br/>
+<br/>
+<div id="listfont" class="text-center">
     <div th:if="${job.picture}!=null">
         <img th:src="${job.picture}" /><hr/>
     </div>
@@ -19,9 +19,10 @@ Posted Date :<span th:text="${job.postedDate}"></span><br/>
 Posted By :<span th:text="${job.author}"></span><br/>
 Phone Number : <span th:text="${job.phone}"></span><br/>
 Job Description : <span th:text="${job.description}"></span><br/>
+    <a th:href="@{/delete/{id}(id=${job.id})}" class="btn btn-outline-secondary">Delete</a>
 </div>
 
-<a th:href="@{/delete/{id}(id=${job.id})}">Delete this post</a>
+
 </body>
 
 <div th:replace="base :: bottom"></div>

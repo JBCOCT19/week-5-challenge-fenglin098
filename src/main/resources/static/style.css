@@ -14,18 +14,18 @@
     margin: 70px;
     padding: 50px;
     color: #FFFFFF;
-    background-color: #424B54;
+    background-color: #59656F;
     width: fit-content;
     font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
 
 }
 
-.navbar{
-    clear: both;
-    color: #2274A5;
-    background-color: #aeaca8;
-    height: 50px;
-}
+/*.navbar{*/
+/*    clear: both;*/
+/*    color: #2274A5;*/
+/*    background-color: #59656F;*/
+/*    height: 50px;*/
+/*}*/
 
 .bottom {
     text-align: center;
