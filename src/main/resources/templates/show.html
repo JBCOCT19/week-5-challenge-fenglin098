@@ -5,20 +5,23 @@
     <title>Detail</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
+<div id="listfont">
 <a href="/">Job Details</a><br/>
+    <div th:if="${job.picture}!=null">
+        <img th:src="${job.picture}" /><hr/>
+    </div>
 Posted Date :<span th:text="${job.postedDate}"></span><br/>
 Posted By :<span th:text="${job.author}"></span><br/>
 Phone Number : <span th:text="${job.phone}"></span><br/>
 Job Description : <span th:text="${job.description}"></span><br/>
-<div th:if="${job.picture}!=null">
-    <img th:src="${job.picture}" /><hr/>
 </div>
 
-<a th:href="@{/delete/{id}(id=${job.id})}">Delete this flight</a>
+<a th:href="@{/delete/{id}(id=${job.id})}">Delete this post</a>
 </body>
 
 <div th:replace="base :: bottom"></div>

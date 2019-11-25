@@ -53,6 +53,10 @@
     object-fit: cover;
 }
 
+#listfont {
+    font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
+}
+
 
 
 

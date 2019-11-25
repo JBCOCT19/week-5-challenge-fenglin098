@@ -5,16 +5,19 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navlinks">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="/">
+            <img src="https://p7.hiclipart.com/preview/125/490/544/employment-website-job-hunting-computer-icons-others.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            CraiglistJobs
+        </a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/add">Add a Job</a>
+                <a class="nav-link" href="/add">Post a Job</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" th:action="@{/result}" method="post" >
