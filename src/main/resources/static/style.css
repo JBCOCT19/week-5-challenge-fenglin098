@@ -1,7 +1,3 @@
-
-
-
-
 .carousel-inner{
     width: auto;
     height: 300px;
@@ -9,7 +5,7 @@
 
 }
 
-.jumbotron {
+#jumbotronform {
     position: absolute;
     margin: 70px;
     padding: 50px;
@@ -20,26 +16,17 @@
 
 }
 
-/*.navbar{*/
-/*    clear: both;*/
-/*    color: #2274A5;*/
-/*    background-color: #59656F;*/
-/*    height: 50px;*/
-/*}*/
-
-.bottom {
-    text-align: center;
-    clear: both;
+#jumbotronbanner {
     color: #FFFFFF;
-    height: 50px;
-    opacity:.5;
+    background: url(https://previews.123rf.com/images/jlpfeifer/jlpfeifer1803/jlpfeifer180300263/98010300-neat-desk-or-workstation-viewed-from-above-with-an-open-laptop-computer-calculator-cup-of-coffee-and.jpg) no-repeat center center fixed;
+    z-index: -1;
+    background-size: cover;
     margin: 0;
-    padding: 0;
 }
 
 #h1font {
     padding: 25px;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
     color: #12130F;
     font-weight: bold;
@@ -56,7 +43,3 @@
 #listfont {
     font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
 }
-
-
-
-

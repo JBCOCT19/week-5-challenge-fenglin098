@@ -20,8 +20,7 @@
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
-
-<div class="jumbotron vertical-center">
+<div class="jumbotron vertical-center" id="jumbotronform">
     <h1 class="text-center">Job Form</h1>
     <br/>
     <form action="/process" th:object="${job}" method="post" enctype="multipart/form-data">

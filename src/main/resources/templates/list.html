@@ -10,11 +10,13 @@
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
-<h1 id="h1font">All Jobs</h1>
+<div class="jumbotron vertical-center" id="jumbotronbanner">
+<h1 id="h1font">Job Postings</h1>
+</div>
 <div class="row" id="listfont">
     <div th:each="job : ${jobs}">
-        <div class="col-sm-3 align-self-center" >
-            <div class="card" style="width: 18rem; padding: 5px;">
+        <div class="col-sm-4 align-self-center" >
+            <div class="card" style="width: 18rem; padding: 10px; margin: 20px;">
                 <div th:if="${job.picture}!=null">
                     <img th:src="${job.picture}" class="card-img-top"/>
                     <div class="card-body">

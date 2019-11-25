@@ -10,6 +10,9 @@
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
+<div class="jumbotron vertical-center" id="jumbotronbanner">
+    <h1 id="h1font">Job Details</h1>
+</div>
 <br/>
 <div id="listfont" class="text-center">
     <div th:if="${job.picture}!=null">
@@ -21,8 +24,6 @@ Phone Number : <span th:text="${job.phone}"></span><br/>
 Job Description : <span th:text="${job.description}"></span><br/>
     <a th:href="@{/delete/{id}(id=${job.id})}" class="btn btn-outline-secondary">Delete</a>
 </div>
-
-
 </body>
 
 <div th:replace="base :: bottom"></div>

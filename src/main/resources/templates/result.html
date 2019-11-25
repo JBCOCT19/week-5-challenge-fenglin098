@@ -10,7 +10,9 @@
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
-<h1 id="h1font">Results</h1>
+<div class="jumbotron vertical-center" id="jumbotronbanner">
+    <h1 id="h1font">Your Search</h1>
+</div>
 <div class="row" id="listfont">
     <div th:each="job : ${jobs}">
         <div class="col-sm-3 align-self-center" >
