@@ -1,0 +1,58 @@
+
+
+
+
+.carousel-inner{
+    width: auto;
+    height: 300px;
+    max-height: 225px;
+
+}
+
+.jumbotron {
+    position: absolute;
+    margin: 70px;
+    padding: 50px;
+    color: #FFFFFF;
+    background-color: #424B54;
+    width: fit-content;
+    font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
+
+}
+
+.navbar{
+    clear: both;
+    color: #2274A5;
+    background-color: #aeaca8;
+    height: 50px;
+}
+
+.bottom {
+    text-align: center;
+    clear: both;
+    color: #FFFFFF;
+    height: 50px;
+    opacity:.5;
+    margin: 0;
+    padding: 0;
+}
+
+#h1font {
+    padding: 25px;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif, "Segoe UI Semibold";
+    color: #12130F;
+    font-weight: bold;
+    text-align: center;
+    opacity:.75;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+
+
