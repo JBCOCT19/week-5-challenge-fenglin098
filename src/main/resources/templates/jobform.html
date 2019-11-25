@@ -15,12 +15,11 @@
             -o-background-size: cover;
             background-size: cover;
         }
-
     </style>
 </head>
 <body>
 <div th:replace="base :: navlinks"></div>
-<div class="jumbotron vertical-center" id="jumbotronform">
+<div class="jumbotron" id="jumbotronform">
     <h1 class="text-center">Job Form</h1>
     <br/>
     <form action="/process" th:object="${job}" method="post" enctype="multipart/form-data">
@@ -62,7 +61,15 @@
     </form>
 </div>
 
-<div th:replace="base :: bottom"></div>
+<div class="footer-copyright fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright Craiglist Jobs © 2019. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
